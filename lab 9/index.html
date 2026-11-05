@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal for an Ecological Volunteer Movement</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. HEADER / NAV -->
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Eco Volunteer Portal — home">
+      <img src="images/recycle.svg" alt="" width="48" height="48">
+      <strong>EcoVolunteers</strong>
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="visually-hidden" aria-label="Open menu">
+    <label for="menu-toggle" class="burger" aria-hidden="true">&#9776;</label>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#actions">Eco-Actions</a></li>
+        <li><a href="#points">Collection Points</a></li>
+        <li><a href="#tips">Eco-Tips</a></li>
+        <li><a href="#volunteer">Become a Volunteer</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- 2. HERO -->
+    <section class="hero" id="actions" aria-labelledby="hero-title">
+      <h1 id="hero-title">Let's Make Our City Cleaner Together</h1>
+      <p>Join neighbours who sort, collect and clean. One day, one district, real results.</p>
+      <a class="btn btn-cta" href="#volunteer">I Want to Join the Clean-up Day</a>
+    </section>
+
+    <!-- 3. GRID SECTION -->
+    <section class="section" id="points" aria-labelledby="points-title">
+      <h2 id="points-title">Collection Points</h2>
+      <p class="lead">Find the nearest point, check the schedule and see which materials are accepted.</p>
+
+      <ul class="cards">
+        <li>
+          <article class="card">
+            <h3>Central Point</h3>
+            <address>12 Abay Ave, Central district</address>
+            <p><strong>Schedule:</strong> Mon–Sat, 09:00–19:00</p>
+            <p><strong>Accepted:</strong></p>
+            <ul class="fractions"><li>Polymers</li><li>Glass</li><li>Paper</li></ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Riverside Point</h3>
+            <address>5 Dostyk St, Riverside district</address>
+            <p><strong>Schedule:</strong> Tue–Sun, 10:00–18:00</p>
+            <p><strong>Accepted:</strong></p>
+            <ul class="fractions"><li>Glass</li><li>Paper</li></ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Green Park Point</h3>
+            <address>27 Satpayev St, North district</address>
+            <p><strong>Schedule:</strong> Daily, 08:00–20:00</p>
+            <p><strong>Accepted:</strong></p>
+            <ul class="fractions"><li>Polymers</li><li>Paper</li></ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Market Square Point</h3>
+            <address>3 Furmanov St, South district</address>
+            <p><strong>Schedule:</strong> Wed–Sun, 09:00–17:00</p>
+            <p><strong>Accepted:</strong></p>
+            <ul class="fractions"><li>Polymers</li><li>Glass</li><li>Paper</li></ul>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ECO-TIPS -->
+    <section class="section section-alt" id="tips" aria-labelledby="tips-title">
+      <h2 id="tips-title">Eco-Tips</h2>
+      <ul class="cards cards-3">
+        <li>
+          <article class="card">
+            <h3>Rinse before sorting</h3>
+            <p>A quick rinse keeps glass and plastic clean enough to be recycled.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Flatten and stack</h3>
+            <p>Flat paper and cardboard take less space in the bin and on the truck.</p>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <h3>Carry a bag</h3>
+            <p>A reusable bag replaces hundreds of single-use bags over a lifetime.</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. FEEDBACK FORM -->
+    <section class="section" id="volunteer" aria-labelledby="volunteer-title">
+      <h2 id="volunteer-title">Become a Volunteer</h2>
+      <p class="lead">Tell us about yourself and how you can help.</p>
+
+      <form class="form" action="#" method="post">
+        <fieldset>
+          <legend>Volunteer application</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" minlength="2" required>
+          <small class="hint">Please enter at least 2 characters.</small>
+
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" placeholder="18" min="14" max="99" required>
+          <small class="hint">Volunteers must be between 14 and 99.</small>
+
+          <label for="district">District</label>
+          <input type="text" id="district" name="district" placeholder="e.g. Riverside" required>
+          <small class="hint">Please tell us your district.</small>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required>
+          <small class="hint">Enter a valid email address.</small>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" pattern="\+?[0-9 ]{10,16}" required>
+          <small class="hint">Use digits, spaces and an optional + (10–16 characters).</small>
+
+          <label for="skill">Competency</label>
+          <select id="skill" name="skill" required>
+            <option value="" selected disabled>Choose how you can help</option>
+            <option value="transport">Transport</option>
+            <option value="resources">Resources</option>
+            <option value="labor">Manual labor</option>
+          </select>
+
+          <button type="submit" class="btn btn-cta">Send application</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 5. FOOTER -->
+  <footer class="site-footer">
+    <section aria-labelledby="stats-title">
+      <h2 id="stats-title">Recycling in numbers</h2>
+      <dl class="stats">
+        <dt>Tonnes recycled</dt><dd>1 240</dd>
+        <dt>Volunteers</dt><dd>3 580</dd>
+        <dt>Clean-up days</dt><dd>64</dd>
+      </dl>
+    </section>
+
+    <nav aria-label="Environmental funds">
+      <h2>Environmental funds</h2>
+      <ul>
+        <li><a href="https://www.wwf.org" target="_blank" rel="noopener">WWF</a></li>
+        <li><a href="https://www.unep.org" target="_blank" rel="noopener">UN Environment Programme</a></li>
+        <li><a href="https://www.greenpeace.org" target="_blank" rel="noopener">Greenpeace</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="legal-title">
+      <h2 id="legal-title">Legal information</h2>
+      <p>Non-profit community initiative. Personal data is used only to organise volunteer activities.</p>
+      <p><small>&copy; 2026 EcoVolunteers. All rights reserved.</small></p>
+    </section>
+
+    <section aria-labelledby="theme-title">
+      <h2 id="theme-title">Theme</h2>
+      <input type="checkbox" id="theme-toggle" class="visually-hidden">
+      <label for="theme-toggle" class="theme-switch">Light / Dark mode</label>
+    </section>
+  </footer>
+
+</body>
+</html>

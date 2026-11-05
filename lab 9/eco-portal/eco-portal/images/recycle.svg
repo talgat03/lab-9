@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="48" height="48" role="img" aria-label="Recycling symbol">
+  <g fill="none" stroke="#2fa35a" stroke-width="9" stroke-linecap="round">
+    <g id="arrow">
+      <path d="M50 14 A36 36 0 0 1 81 68"/>
+      <polygon points="89,72 77,66 78,80" fill="#2fa35a" stroke="#2fa35a" stroke-width="2" stroke-linejoin="round"/>
+    </g>
+    <use href="#arrow" transform="rotate(120 50 50)"/>
+    <use href="#arrow" transform="rotate(240 50 50)"/>
+  </g>
+</svg>
